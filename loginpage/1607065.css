@@ -1,0 +1,188 @@
+body {
+  background-image: url("two_friends_love-1920x1200.jpg");
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+ul {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  transform: translate(-18%,-40%);
+  margin: 0;
+  padding: 10px 0;
+  background: #F9FF2C ;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px #FEF7AA;
+}
+ul li
+{
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 2px solid #43EB76;
+}
+ul li:last-child
+{
+  border-right: none;
+}
+ul li a
+{
+  text-decoration: none;
+  padding: 0 40px;
+  display: block;
+}
+ul li a .icon
+{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+ul li a .icon .fa
+{
+  width: 100%;
+  height: 100%;
+ line-height: 40px;
+  display: inherit;
+  font-size: 44px;
+  transition: 0.5s;
+  color: #000;
+}
+ul li a .icon .fa:last-child
+{
+  color: #00B272;
+}
+ul li a:hover .icon .fa
+{
+  transform: translateY(-100%);
+}
+ul li a .name
+{
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+ul li a .name span
+{
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  line-height: 20px;
+  transition: 0.5s;
+  }
+ul li a .name span:before
+{
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width:100%;
+  height:100%;
+  color: #00B272;
+}
+ul li a:hover .name span
+{
+  transform: translateY(20px);
+}
+.p
+{
+  padding: 30px;
+
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #00B272;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}

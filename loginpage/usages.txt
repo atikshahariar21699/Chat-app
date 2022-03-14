@@ -1,0 +1,1 @@
+css function attr // ul li a.name span:before
